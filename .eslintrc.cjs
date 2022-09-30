@@ -9,8 +9,10 @@ module.exports = {
     'standard-with-typescript',
     'prettier'
   ],
-  overrides: [
-  ],
+  overrides: [{
+    files: ['**/?(*.)+(spec|test).+(ts|tsx|js)'],
+    extends: ['plugin:jest-dom/recommended', 'plugin:testing-library/react']
+  }],
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
@@ -18,7 +20,9 @@ module.exports = {
   },
   plugins: [
     'react',
-    'react-hooks'
+    'react-hooks',
+    'jest-dom',
+    'testing-library'
   ],
   rules: {
     "react/react-in-jsx-scope": "off",
@@ -29,5 +33,6 @@ module.exports = {
     react: {
       version: 'detect'
     }
-  }
+  },
+  ignorePatterns: ['vitest.setup.ts']
 }
