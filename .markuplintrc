@@ -1,0 +1,16 @@
+{
+  "parser": {
+    "\\.[jt]sx?$": "@markuplint/jsx-parser"
+  },
+  "specs": {
+    "\\.[jt]sx?$": "@markuplint/react-spec"
+  },
+  "extends": [
+    "markuplint:recommended"
+  ],
+  "rules": {
+    "invalid-attr": false,
+    "permitted-contents": 0,
+    "require-accessible-name": 0
+  }
+}
