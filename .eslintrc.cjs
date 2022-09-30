@@ -34,5 +34,5 @@ module.exports = {
       version: 'detect'
     }
   },
-  ignorePatterns: ['vitest.setup.ts']
+  ignorePatterns: ['vitest.setup.ts', 'vite.config.ts']
 }
