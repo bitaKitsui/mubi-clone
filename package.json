@@ -16,7 +16,8 @@
     "pre-commit": "npm run lint && npm run lint:markup && npm run lint:css",
     "test": "vitest",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "hygen": "hygen generator components"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -54,6 +55,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-storybook": "^0.6.4",
     "eslint-plugin-testing-library": "^5.7.0",
+    "hygen": "^6.2.11",
     "jsdom": "^20.0.0",
     "markuplint": "^2.10.1",
     "prettier": "^2.7.1",
