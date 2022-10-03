@@ -1,0 +1,13 @@
+// Vitest Snapshot v1
+
+exports[`Button Component > Button が正しく表示されていること 1`] = `
+<div>
+  <button
+    class="sc-bcXHqe fVUCYm"
+    color="primary"
+    type="button"
+  >
+    Button Component
+  </button>
+</div>
+`;
