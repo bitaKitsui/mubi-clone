@@ -83,4 +83,19 @@ describe("Button Component", () => {
     await userEvent.click(screen.getByRole("button"));
     expect(onClickMock).toHaveBeenCalledTimes(1);
   });
+
+  test("disabled が渡ってきたとき、 Button が disabled 状態であること", async () => {
+    render(
+      <Button
+        variant="text"
+        color="primary"
+        type="button"
+        disabled={true}
+        size="medium"
+      >
+        Button Component
+      </Button>
+    );
+    expect(screen.getByRole("button")).toBeDisabled();
+  });
 });
